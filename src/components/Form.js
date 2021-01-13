@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, TextField, Grid } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
 
 const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
   const inputTextHundler = (e) => {
@@ -13,10 +13,6 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
       { text: inputText, completed: false, id: Math.random() * 1000 },
     ]);
     console.log(todos);
-  };
-
-  const statusHandler = (e) => {
-    setStatus(e.target.value);
   };
 
   return (
